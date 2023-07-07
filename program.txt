@@ -1,0 +1,20 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter your name:");
+        string name = Console.ReadLine();
+
+        Console.WriteLine("Enter your age:");
+        int age = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter your favorite color:");
+        string color = Console.ReadLine();
+
+        Console.WriteLine("Name: " + name);
+        Console.WriteLine("Age: " + age);
+        Console.WriteLine("Favorite Color: " + color);
+    }
+}
