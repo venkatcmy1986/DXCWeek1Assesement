@@ -1,0 +1,21 @@
+using System;
+
+class Program
+{
+    static bool CheckArrays(int[] arr1, int[] arr2)
+    {
+        return arr1[0] == arr2[0] || arr1[arr1.Length - 1] == arr2[arr2.Length - 1];
+    }
+
+    static void Main(string[] args)
+    {
+        int[] a = {1, 2, 3};
+        int[] b = {7, 3};
+        int[] c = {1, 2, 3};
+        int[] d = {2, 3, 4};
+
+        Console.WriteLine(CheckArrays(a, b)); // True
+        Console.WriteLine(CheckArrays(b, c)); // True
+        Console.WriteLine(CheckArrays(c, d)); // False
+    }
+}

@@ -1,0 +1,36 @@
+using System;
+
+namespace Admission
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int math, phy, chem, total, totalMP;
+
+            Console.WriteLine("Enter marks in Math:");
+            math = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter marks in Physics:");
+            phy = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter marks in Chemistry:");
+            chem = int.Parse(Console.ReadLine());
+
+            total = math + phy + chem;
+            totalMP = math + phy;
+
+            bool eligible = false;
+
+            
+            if (math >= 65 && phy > 55 && chem >= 50)
+            {
+                if (total >= 180 || totalMP >= 140)
+                {
+                    eligible = true;
+                }
+            }
+
+            Console.WriteLine(eligible ? "Eligible for admission" : "Not eligible for admission");
+        }
+    }
+}

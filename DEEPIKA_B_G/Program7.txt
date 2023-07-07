@@ -1,0 +1,65 @@
+using System;
+
+public class Person
+{
+    public string Name { get; set; }
+    public string Address { get; set; }
+    public string Phone { get; set; }
+
+    public Person(string name, string address, string phone)
+    {
+        Name = name;
+        Address = address;
+        Phone = phone;
+    }
+
+    public virtual void DisplayDetails()
+    {
+        Console.WriteLine("Person Details:");
+        Console.WriteLine("Name: " + Name);
+        Console.WriteLine("Address: " + Address);
+        Console.WriteLine("Phone: " + Phone);
+    }
+}
+
+public class Student : Person
+{
+    public int RollNumber { get; set; }
+    public string Course { get; set; }
+    public double Marks { get; set; }
+    public string CollegeAddress { get; set; }
+
+    public Student(string name, string address, string phone, int rollNumber, string course, double marks, string collegeAddress)
+        : base(name, address, phone)
+    {
+        RollNumber = rollNumber;
+        Course = course;
+        Marks = marks;
+        CollegeAddress = collegeAddress;
+    }
+
+    public override void DisplayDetails()
+    {
+        Console.WriteLine("Student Details:");
+        Console.WriteLine("Name: " + Name);
+        Console.WriteLine("Address: " + Address);
+        Console.WriteLine("Phone: " + Phone);
+        Console.WriteLine("Roll Number: " + RollNumber);
+        Console.WriteLine("Course: " + Course);
+        Console.WriteLine("Marks: " + Marks);
+        Console.WriteLine("College Address: " + CollegeAddress);
+    }
+}
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Person person = new Person("John Smith", "123 Main St", "123-456-7890");
+        Student student = new Student("Jane Doe", "456 Elm St", "987-654-3210", 1001, "Computer Science", 85.5, "XYZ College");
+
+        person.DisplayDetails();
+        Console.WriteLine();
+        student.DisplayDetails();
+    }
+}

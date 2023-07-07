@@ -1,0 +1,25 @@
+using System;  
+namespace Exercise 
+{  
+   class Program  
+   {  
+      static void Main(string[] args)  
+      {  
+         int i, k ; 
+         Console.Write("Enter a number: ");
+         var n = Console.ReadLine();
+         Console.Write("Enter the desired width: ");
+         var val = int.Parse(Console.ReadLine());
+         for (i = 1; i <= val; i++)  
+         {  
+             
+            for (k = 1; k <= i; k++)  
+            {  
+               Console.Write(n);  
+            }  
+            Console.WriteLine("");  
+         }  
+      }  
+   }  
+}
+

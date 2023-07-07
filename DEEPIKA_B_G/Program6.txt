@@ -1,0 +1,46 @@
+using System;
+
+public class Vehicle
+{
+    
+    public string Brand { get; set; }
+    public string Color { get; set; }
+    public double Price { get; set; }
+    public int YearOfManufacturing { get; set; }
+
+   
+    public Vehicle()
+    {
+        Brand = "Toyota";
+        Color = "Red";
+        Price = 25000.50;
+        YearOfManufacturing = 2019;
+    }
+
+    public Vehicle(string brand, string color, double price, int yearOfManufacturing)
+    {
+        Brand = brand;
+        Color = color;
+        Price = price;
+        YearOfManufacturing = yearOfManufacturing;
+    }
+    public void DisplayInfo()
+    {
+        Console.WriteLine("Vehicle Information:");
+        Console.WriteLine("Brand: " + Brand);
+        Console.WriteLine("Color: " + Color);
+        Console.WriteLine("Price: $" + Price);
+        Console.WriteLine("Year of Manufacturing: " + YearOfManufacturing);
+    }
+}
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+
+        Vehicle myVehicle = new Vehicle();
+
+        myVehicle.DisplayInfo();
+    }
+}

@@ -1,0 +1,58 @@
+using System;
+using System.Collections;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Stack stack = new Stack();
+        stack.Push(5);
+        stack.Push(10);
+        stack.Push(15);
+        stack.Push(20);
+        stack.Push(25);
+
+
+        Console.WriteLine("Original Stack:");
+        DisplayStack(stack);
+
+
+        int elementToRemove = 15;
+        RemoveElementFromStack(stack, elementToRemove);
+
+ 
+        Console.WriteLine("\nUpdated Stack:");
+        DisplayStack(stack);
+    }
+
+
+    public static void RemoveElementFromStack(Stack stack, int elementToRemove)
+    {
+
+        Stack tempStack = new Stack();
+
+        
+        while (stack.Count > 0)
+        {
+            int element = (int)stack.Pop();
+            if (element != elementToRemove)
+            {
+                tempStack.Push(element);
+            }
+        }
+
+        
+        while (tempStack.Count > 0)
+        {
+            stack.Push(tempStack.Pop());
+        }
+    }
+
+    public static void DisplayStack(Stack stack)
+    {
+        foreach (int element in stack)
+        {
+            Console.WriteLine(element);
+        }
+    }
+}

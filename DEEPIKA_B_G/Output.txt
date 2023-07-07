@@ -1,0 +1,91 @@
+Prg1 Output:
+Enter a number: 2
+Enter the desired width: 5
+2
+22
+222
+2222
+22222
+
+
+Prg2 Output:
+True
+True
+False
+
+
+Prg3 Output1:
+Enter marks in Math:
+77
+Enter marks in Physics:
+67
+Enter marks in Chemistry:
+55
+Eligible for admission
+
+
+
+Prg3 Output2:
+Enter marks in Math:
+50
+Enter marks in Physics:
+56
+Enter marks in Chemistry:
+56
+Not eligible for admission
+
+
+
+Prg4 Output:
+Enter the limit: 9
+1	
+1	1	
+1	1	2	
+1	1	2	3	
+1	1	2	3	5	
+1	1	2	3	5	8	
+1	1	2	3	5	8	13	
+1	1	2	3	5	8	13	21	
+1	1	2	3	5	8	13	21	34
+
+
+
+Prg5 Output:
+Original Stack:
+25
+20
+15
+10
+5
+
+Updated Stack:
+25
+20
+10
+5
+
+
+
+Prg6 Output:
+Brand: Toyota
+Color: Red
+Price: $25000.5
+Year of Manufacturing: 2019
+
+
+
+
+Prg7 Output:
+Person Details:
+Name: John Smith
+Address: 123 Main St
+Phone: 123-456-7890
+
+Student Details:
+Name: Jane Doe
+Address: 456 Elm St
+Phone: 987-654-3210
+Roll Number: 1001
+Course: Computer Science
+Marks: 85.5
+College Address: XYZ College
