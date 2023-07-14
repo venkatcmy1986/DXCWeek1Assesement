@@ -1,0 +1,43 @@
+//program 2
+
+using System;
+
+public class Student
+{
+    public int rollNo;
+    public string studName;
+    public int marksEng;
+    public int marksMath;
+    public int marksScience;
+
+    public Student(int rollNo, string studName, int marksEng, int marksMath, int marksScience)
+    {
+        this.rollNo = rollNo;
+        this.studName = studName;
+        this.marksEng = marksEng;
+        this.marksMath = marksMath;
+        this.marksScience = marksScience;
+    }
+
+    public int getTotalMarks()
+    {
+        return marksEng + marksMath + marksScience;
+    }
+
+    public double getPercentage()
+    {
+        return (getTotalMarks() / 3) * 100;
+    }
+
+    public void DisplayDetails()
+    {
+        Console.WriteLine("Roll No: " + rollNo);
+        Console.WriteLine("Student Name: " + studName);
+        Console.WriteLine("Marks in English: " + marksEng);
+        Console.WriteLine("Marks in Maths: " + marksMath);
+        Console.WriteLine("Marks in Science: " + marksScience);
+        Console.WriteLine("Total Marks: " + getTotalMarks());
+        Console.WriteLine("Percentage: " + getPercentage());
+    }
+}
+
